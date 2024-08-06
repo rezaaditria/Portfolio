@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
+import BlurIn from "@/components/magicui/blur-in";
 
 const reviews = [
   {
@@ -68,6 +69,10 @@ const ReviewCard = ({
 export function Experiences() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+      <BlurIn
+        word="And here's some of my experiences"
+        className="text-2xl font-bold text-black dark:text-white mt-28 mb-14 px-5"
+      />
       <Marquee pauseOnHover className="[--duration:50s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

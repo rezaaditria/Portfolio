@@ -10,31 +10,18 @@ import { Contact } from "../pages/Contact/contact";
 const MainPage = () => {
   return (
     <div className="min-h-screen">
-      <div id="">
-        <Hero />
-      </div>
+      <Hero />
       <About />
+
       <div id="skills">
-        <BlurIn
-          word="Here's some of my skills"
-          className="text-2xl font-bold text-black dark:text-white"
-        />
         <SkillAlter />
       </div>
-      <div id="experience">
-        <BlurIn
-          word="And here's some of my experiences"
-          className="text-2xl font-bold text-black dark:text-white mt-28"
-        />
-        <Experiences />
-      </div>
-      <div id="project">
-        <BlurIn
-          word="These are my project i've been working on"
-          className="text-2xl font-bold text-black dark:text-white mt-28"
-        />
-        <Project />
-      </div>
+
+      <div id="experience" className="px-5"></div>
+      <Experiences />
+
+      <div id="project" className="px-5"></div>
+      <Project />
 
       <div id="Contact">
         <Contact />

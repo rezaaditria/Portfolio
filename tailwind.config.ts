@@ -59,6 +59,10 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
         "border-beam": {
           "100%": {
             "offset-distance": "100%",
@@ -112,6 +116,8 @@ const config = {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         meteor: "meteor 5s linear infinite",
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
       },
     },
   },

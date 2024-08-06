@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 const Hero: React.FC = () => {
   return (
@@ -14,12 +15,15 @@ const Hero: React.FC = () => {
             className="font-display w-dvw text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
           />
           <div className="absolute inset-0 flex justify-center items-center">
-            <Image
-              src="/profile/nobg.png"
-              width={300}
-              height={300}
-              alt="Reza"
-            />
+            <NeonGradientCard>
+              <Image
+                src="/profile/nobg.png"
+                width={300}
+                height={300}
+                alt=" "
+                className="w-32 h-32 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-64 lg:h-64"
+              />
+            </NeonGradientCard>
           </div>
         </div>
       </div>

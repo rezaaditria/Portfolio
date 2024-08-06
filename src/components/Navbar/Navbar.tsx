@@ -25,21 +25,21 @@ const Navbar: React.FC = () => {
     <nav>
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-32">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden"></div>
-          <div className="flex-1 flex sm:items-stretch sm:justify-start">
+          <div className="flex-1 flex items-center justify-between sm:items-stretch sm:justify-start">
             <div className="header">
               <a href="/" className="flex-shrink-0 flex ml-[30px] sm:ml-0">
-                <h1 className=" text-4xl font-bold font-sans">Reza</h1>
-                <h2 className="text-[#FF204E] opacity-80 px-2 hover:">
-                  Front-end
-                </h2>
+                <h1 className="text-4xl font-bold font-sans">Reza</h1>
+                <h2 className="text-[#FF204E] opacity-80 px-2">Front-end</h2>
               </a>
             </div>
+            <div className="sm:hidden">
+              <ModeToggle />
+            </div>
           </div>
-          <div className="hidden sm:block sm:ml-6">
-            <div className="flex space-x-4 justify-end">
+          <div className="hidden sm:flex sm:items-center sm:ml-6">
+            <div className="flex space-x-4">
               <a href="#skills" onClick={(e) => handleLinkClick(e, "skills")}>
-                <div className="text-2xl opacity-80  px-3 py-2 font-light">
+                <div className="text-2xl opacity-80 px-3 py-2 font-light">
                   <span className="hover:bg-gradient-to-r hover:from-[#FF204E] hover:via-[#5D0E41] hover:to-[#00224D] hover:bg-clip-text hover:text-transparent">
                     Skills
                   </span>
@@ -49,21 +49,21 @@ const Navbar: React.FC = () => {
                 href="#experience"
                 onClick={(e) => handleLinkClick(e, "experience")}
               >
-                <div className="text-2xl opacity-80  px-3 py-2 font-light">
+                <div className="text-2xl opacity-80 px-3 py-2 font-light">
                   <span className="hover:bg-gradient-to-r hover:from-[#FF204E] hover:via-[#5D0E41] hover:to-[#00224D] hover:bg-clip-text hover:text-transparent">
                     Experiences
                   </span>
                 </div>
               </a>
               <a href="#project" onClick={(e) => handleLinkClick(e, "project")}>
-                <div className="text-2xl opacity-80  px-3 py-2 font-light">
+                <div className="text-2xl opacity-80 px-3 py-2 font-light">
                   <span className="hover:bg-gradient-to-r hover:from-[#FF204E] hover:via-[#5D0E41] hover:to-[#00224D] hover:bg-clip-text hover:text-transparent">
                     Projects
                   </span>
                 </div>
               </a>
               <a href="#Contact" onClick={(e) => handleLinkClick(e, "Contact")}>
-                <div className="text-2xl opacity-80  px-3 py-2 font-light">
+                <div className="text-2xl opacity-80 px-3 py-2 font-light">
                   <span className="hover:bg-gradient-to-r hover:from-[#FF204E] hover:via-[#5D0E41] hover:to-[#00224D] hover:bg-clip-text hover:text-transparent">
                     Contact
                   </span>
