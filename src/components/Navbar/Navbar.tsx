@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav>
+    <nav className="bg-transparent ">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-32">
           <div className="flex-1 flex items-center justify-between sm:items-stretch sm:justify-start">
@@ -32,8 +32,29 @@ const Navbar: React.FC = () => {
                 <h2 className="text-[#FF204E] opacity-80 px-2">Front-end</h2>
               </a>
             </div>
-            <div className="sm:hidden">
+            <div className="sm:hidden flex items-center">
               <ModeToggle />
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-800 hover:text-gray-600 focus:outline-none"
+              >
+                <svg
+                  className="h-8 w-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d={
+                      isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"
+                    }
+                  />
+                </svg>
+              </button>
             </div>
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6">
@@ -72,6 +93,61 @@ const Navbar: React.FC = () => {
               <ModeToggle />
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        className={`sm:hidden fixed inset-0 z-50 transition-transform duration-300 ease-in-out bg-white dark:bg-neutral-950 ${
+          isOpen ? "transform translate-x-0" : "transform translate-x-full"
+        }`}
+      >
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-4 right-4 text-gray-800 hover:text-gray-600 focus:outline-none"
+        >
+          <svg
+            className="h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div className="pt-32 pb-3 space-y-1 z-999 flex flex-col items-center">
+          <a
+            href="#skills"
+            onClick={(e) => handleLinkClick(e, "skills")}
+            className="block text-2xl opacity-80 px-3 py-2 font-light text-center"
+          >
+            Skills
+          </a>
+          <a
+            href="#experience"
+            onClick={(e) => handleLinkClick(e, "experience")}
+            className="block text-2xl opacity-80 px-3 py-2 font-light text-center"
+          >
+            Experiences
+          </a>
+          <a
+            href="#project"
+            onClick={(e) => handleLinkClick(e, "project")}
+            className="block text-2xl opacity-80 px-3 py-2 font-light text-center"
+          >
+            Projects
+          </a>
+          <a
+            href="#Contact"
+            onClick={(e) => handleLinkClick(e, "Contact")}
+            className="block text-2xl opacity-80 px-3 py-2 font-light text-center"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
