@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 import BlurIn from "@/components/magicui/blur-in";
+import Image from "next/image";
 
 const reviews = [
   {
@@ -52,7 +53,13 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="40" height="40" alt="" src={img} />
+        <Image
+          className="rounded-full"
+          width="40"
+          height="40"
+          alt=""
+          src={img}
+        />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
