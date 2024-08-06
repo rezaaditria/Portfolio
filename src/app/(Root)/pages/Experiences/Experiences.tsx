@@ -7,7 +7,7 @@ const reviews = [
     username: "February 2024 - June 2024",
     role: "Frontend developer",
     body: "Integrating raw data to data visual using Apexchart, and implementing drag and drop using DnDkit library to Dashboard Auto Insight project.",
-    img: "/Logo/telkom.png",
+    img: "/Logo/Telkom.png",
   },
   {
     name: "MBC Laboratory",
