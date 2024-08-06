@@ -1,10 +1,20 @@
+import { BorderBeam } from "@/components/magicui/border-beam";
 import ClientTweetCard from "@/components/magicui/ClientTweetCard";
+import Meteors from "@/components/magicui/meteors";
 
 export async function Project() {
   return (
-    <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg gap-4">
-      <ClientTweetCard id="1820657832183882185" className="shadow-2xl" />
-      <ClientTweetCard id="1820657832183882185" className="shadow-2xl" />
+    <div className="relative max-w-screen overflow-hidden">
+      <Meteors number={10} />
+      <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg m-10">
+        <ClientTweetCard id="1820694368950649173" className="shadow-2xl" />
+      </div>
+      <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg m-10">
+        <ClientTweetCard id="1820693602605183108" className="shadow-2xl" />
+      </div>
+      <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg m-10">
+        <ClientTweetCard id="1820698747921371589" className="shadow-2xl" />
+      </div>
     </div>
   );
 }
