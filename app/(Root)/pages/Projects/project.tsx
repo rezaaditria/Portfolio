@@ -13,10 +13,8 @@ export async function Project() {
         <h1 className="text-4xl font-bold text-black dark:text-white px-5 text-center pt-36 pb-16">
           These are my project i&apos;ve been working on
         </h1>
-        <div className="relative max-w-screen overflow-hidden">
-          <ExpandableCardDemo />
-        </div>
       </FadeContent>
+      <ExpandableCardDemo />
     </>
   );
 }
