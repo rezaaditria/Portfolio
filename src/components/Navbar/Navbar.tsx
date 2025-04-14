@@ -91,8 +91,8 @@ const Navbar: React.FC = () => {
                 </div>
               </a>
               <a
-                href="/Muhammad_Reza_Aditria-resume.pdf"
-                download="Muhammad_Reza_Aditria-resume.pdf"
+                href="/Curriculum-Vitae.pdf"
+                download
                 className="text-2xl opacity-80 px-3 py-2 font-light"
               >
                 <svg
