@@ -1,6 +1,7 @@
-import IconCloudWrapper from "@/components/Skills/IconCloudWrapper";
+import { ExpandableCardDemo } from "@/components/expandable-card-demo-grid";
 import FadeContent from "@/components/magicui/faded";
-export function SkillAlter() {
+
+export async function Project() {
   return (
     <>
       <FadeContent
@@ -10,11 +11,10 @@ export function SkillAlter() {
         initialOpacity={0}
       >
         <h1 className="text-4xl font-bold text-black dark:text-white px-5 text-center pt-36 pb-16">
-          Here&apos;s some of my skills
+          These are my project i&apos;ve been working on
         </h1>
-
-        <div className="relative flex h-full w-full max-w-[32rem]  items-center justify-center overflow-hidden rounded-lg mx-auto">
-          <IconCloudWrapper />
+        <div className="relative max-w-screen overflow-hidden">
+          <ExpandableCardDemo />
         </div>
       </FadeContent>
     </>

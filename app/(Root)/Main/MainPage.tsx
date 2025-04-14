@@ -1,30 +1,46 @@
 import React from "react";
-import { SkillAlter } from "../../../components/Skills/SkillAlter";
+import { SkillAlter } from "@/components/Skills/SkillAlter";
 import Hero from "../pages/Hero/Hero";
 import { About } from "../pages/About/About";
-import BlurIn from "@/components/magicui/blur-in";
 import { Experiences } from "../pages/Experiences/Experiences";
 import { Project } from "../pages/Projects/project";
 import { Contact } from "../pages/Contact/contact";
+import FadeContent from "@/components/magicui/faded";
 
 const MainPage = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
+      <FadeContent
+        blur={true}
+        duration={2000}
+        easing="ease-out"
+        initialOpacity={0}
+      >
+        <Hero />
+      </FadeContent>
+
       <About />
 
       <div id="skills">
         <SkillAlter />
       </div>
 
-      <div id="experience" className="px-5"></div>
-      <Experiences />
+      <div id="experience" className="px-5">
+        <Experiences />
+      </div>
 
       <div id="project" className="px-5"></div>
       <Project />
 
       <div id="Contact">
-        <Contact />
+        <FadeContent
+          blur={true}
+          duration={2000}
+          easing="ease-out"
+          initialOpacity={0}
+        >
+          <Contact />
+        </FadeContent>
       </div>
     </div>
   );

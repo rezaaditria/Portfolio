@@ -158,8 +158,8 @@ export function Contact() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
-                  href="/Muhammad Reza Aditria-resume.pdf" // Path to the CV file in the public folder
-                  download="Muhammad Reza Aditria-resume.pdf" // Specify the downloaded file name
+                  href="/Curriculum-Vitae.pdf"
+                  download
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
                     "size-12 rounded-full"
@@ -183,14 +183,14 @@ export function Contact() {
                       />
                       <path
                         fill="currentColor"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M11.185 1H4.5A1.5 1.5 0 0 0 3 2.5v15A1.5 1.5 0 0 0 4.5 19h11a1.5 1.5 0 0 0 1.5-1.5V7.202a1.5 1.5 0 0 0-.395-1.014l-4.314-4.702A1.5 1.5 0 0 0 11.185 1M4 2.5a.5.5 0 0 1 .5-.5h6.685a.5.5 0 0 1 .369.162l4.314 4.702a.5.5 0 0 1 .132.338V17.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M11.5 2.1v4.7h4.7"
                       />
                       <path
@@ -199,9 +199,9 @@ export function Contact() {
                       />
                       <path
                         fill="currentColor"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10.266 8.444c0-1.134-.955-1.955-2.133-1.955S6 7.309 6 8.444v.534a.356.356 0 0 0 .356.355h3.555a.356.356 0 0 0 .355-.355z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </g>
                   </svg>

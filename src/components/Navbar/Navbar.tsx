@@ -104,13 +104,13 @@ const Navbar: React.FC = () => {
                   <g
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                   >
                     <path
-                      stroke-dasharray="2 4"
-                      stroke-dashoffset="6"
+                      strokeDasharray="2 4"
+                      strokeDashoffset="6"
                       d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9"
                     >
                       <animate
@@ -121,8 +121,8 @@ const Navbar: React.FC = () => {
                       />
                     </path>
                     <path
-                      stroke-dasharray="32"
-                      stroke-dashoffset="32"
+                      strokeDasharray="32"
+                      strokeDashoffset="32"
                       d="M12 21c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9"
                     >
                       <animate
@@ -134,8 +134,8 @@ const Navbar: React.FC = () => {
                       />
                     </path>
                     <path
-                      stroke-dasharray="10"
-                      stroke-dashoffset="10"
+                      strokeDasharray="10"
+                      strokeDashoffset="10"
                       d="M12 8v7.5"
                     >
                       <animate
@@ -147,8 +147,8 @@ const Navbar: React.FC = () => {
                       />
                     </path>
                     <path
-                      stroke-dasharray="6"
-                      stroke-dashoffset="6"
+                      strokeDasharray="6"
+                      strokeDashoffset="6"
                       d="M12 15.5l3.5 -3.5M12 15.5l-3.5 -3.5"
                     >
                       <animate
@@ -221,8 +221,8 @@ const Navbar: React.FC = () => {
             Contact
           </a>
           <a
-            href="/Muhammad_Reza_Aditria-resume.pdf"
-            download="Muhammad_Reza_Aditria-resume.pdf"
+            href="/Curriculum-Vitae.pdf"
+            download
             className="block text-2xl opacity-80 px-3 py-2 font-light text-center"
           >
             Curriculum Vitae
