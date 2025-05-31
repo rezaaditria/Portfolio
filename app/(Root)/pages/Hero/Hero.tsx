@@ -6,8 +6,8 @@ import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 const Hero: React.FC = () => {
   return (
-    <div className="w-screen p-1">
-      <div className="grid grid-cols-1 pt-5 pb-20">
+    <div className="w-screen pt-24">
+      <div className="grid grid-cols-1 h-fit py-auto">
         <div className="relative flex justify-center items-center w-full">
           <VelocityScroll
             text="Muhammad Reza Aditria"

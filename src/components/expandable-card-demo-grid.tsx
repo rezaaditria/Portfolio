@@ -133,13 +133,16 @@ export function ExpandableCardDemo() {
             onClick={() => setActive(card)}
             className="p-4 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <motion.div layoutId={`image-${card.id}-${id}`}>
+            <motion.div
+              layoutId={`image-${card.id}-${id}`}
+              className="relative w-full h-60"
+            >
               <Image
-                width={100}
-                height={100}
                 src={card.src}
                 alt={card.title}
-                className="h-60 w-full rounded-lg object-cover object-top"
+                quality={100}
+                fill
+                className="rounded-lg object-cover object-top"
               />
             </motion.div>
             <div className="flex justify-center items-center flex-col mt-2">
