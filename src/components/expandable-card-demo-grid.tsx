@@ -75,7 +75,19 @@ export function ExpandableCardDemo() {
               ref={ref}
               className="w-full max-w-[500px] h-full md:h-fit md:max-w-[700px] md:max-h-[90%] bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden flex flex-col"
             >
-              <motion.div layoutId={`image-${active.id}-${id}`}>
+              <motion.div
+                layoutId={`image-${active.id}-${id}`}
+                className="relative w-full h-60"
+              >
+                <Image
+                  src={active.src}
+                  alt={active.title}
+                  quality={100}
+                  fill
+                  className="rounded-lg object-cover object-top"
+                />
+              </motion.div>
+              {/* <motion.div layoutId={`image-${active.id}-${id}`}>
                 <Image
                   width={200}
                   height={200}
@@ -84,7 +96,7 @@ export function ExpandableCardDemo() {
                   alt={active.title}
                   className="w-full h-80 object-cover object-top"
                 />
-              </motion.div>
+              </motion.div> */}
 
               <div className="grid gap-2 p-8">
                 <div className="flex justify-between items-start">
